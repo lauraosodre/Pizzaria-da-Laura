@@ -43,9 +43,9 @@
         }
 
         a:hover {
-        color: white;
-        background-color: rgb(17, 44, 2);
-        border-radius: 20px;
+            color: white;
+            background-color: rgb(17, 44, 2);
+            border-radius: 20px;
         }
 
         h1 {
@@ -57,10 +57,24 @@
             display: flex;
             align-items: center;
         }
-        #menu{
-            margin-top: 10px;
+
+        #menu {
+
             background-color: gold;
             padding: 10px;
+        }
+
+        #divF1 {
+            display: flex;
+            padding: 20px;
+            justify-content: space-evenly;
+            color: white;
+        }
+
+        #divF2 {
+            display: flex;
+            text-align: center;
+            color: white;
         }
     </style>
 </head>
@@ -81,12 +95,25 @@
         </div>
     </header>
     <main>
-        <img src="Pizza.jpg" height="480px" width="100%">
+        <img src="Pizza.jpg" height="400px" width="100%">
     </main>
     <footer>
-        <h3> Pizzaria do Laura </h3>
-        <h4> Desenvolvido por Laura Sodré - 2025 </h4>
-
+        <div id="F1">
+            <div id="f1">
+                <p> Área de entrega </p>
+            </div>
+            <div id="f2">
+                <p> Atendimento </p>
+            </div>
+            <div id="f3">
+                <p> Contato </p>
+            </div>
+        </div>
+        <div id="F2">
+            <div id="f4">
+                <p> &copy; Desenvolvido por Laura Sodré <br> 2025 </p>
+            </div>
+        </div>
     </footer>
 </body>
 
