@@ -13,14 +13,16 @@
             display: flex;
             text-align: center;
             flex-direction: column;
-            background-color: rgb(0, 0, 0, 0.7);
+            background-color: rgb(5, 133, 207, 0.6);
 
         }
 
         footer {
-            background-color: rgb(0, 0, 0, 0.7);
-            padding: 10px;
+            background-color: rgb(5, 133, 207, 0.6);
+            padding: 20px;
             margin: 0;
+            width: 100%;
+            font-size: 24px;
         }
 
         img {
@@ -44,7 +46,7 @@
 
         a:hover {
             color: white;
-            background-color: rgb(17, 44, 2);
+            background-color: rgb(5, 133, 207);
             border-radius: 10px;
         }
 
@@ -71,22 +73,32 @@
             display: flex;
             justify-content: space-evenly;
             padding: 20px;
-            color: white;
+            color: gold;
         }
 
-        #f4 {
-            
+        #F2 {
+
             display: flex;
-            text-align: center;
+            justify-content: center;
             color: white;
+            padding: 10px;
+        }
+
+        #atendimento,
+        #contato,
+        #entrega {
+            color: white;
+            font-size: medium;
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
 
-<body style="background-color: rgb(45, 124, 3); color: gold;">
+<body style="background-color: rgb(5, 133, 207); color: gold;">
     <header>
         <div id="logo">
-            <img src="logo.jpg" width="70px">
+            <img src="logo.jpg.webp" width="70px">
             <h1> Pizzaria da Laura </h1>
         </div>
         <div id="menu">
@@ -99,22 +111,33 @@
         </div>
     </header>
     <main>
-        <img src="Pizza.jpg" height="400px" width="100%">
+        <img src="pizza.webp" height="400px" width="100%">
     </main>
     <footer>
         <div id="F1">
             <div id="f1">
                 <p> Área de entrega </p>
+                <div id="entrega">
+                    <p> Arraial do Cabo/RJ <br> Cabo Frio/RJ </p>
+                </div>
             </div>
             <div id="f2">
                 <p> Atendimento </p>
+                <div id="atendimento">
+                    <p> Segunda à Sábado das 18:00 às 23:00 horas </p>
+                </div>
             </div>
             <div id="f3">
                 <p> Contato </p>
+                <div id="contato">
+                    <p> Telefone: (22)2622-4709</p>
+                </div>
             </div>
         </div>
-        <div id="f4">
-            <p style="font-size: small;"> &copy; Desenvolvido por Laura Sodré <br> 2025 </p>
+        <div id="F2">
+            <div id="f4">
+                <p style="font-size: large;"> &copy; Desenvolvido por Laura Sodré - 2025 </p>
+            </div>
         </div>
     </footer>
 </body>
