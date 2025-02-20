@@ -2,11 +2,19 @@
 <html lang="en">
 
 <head>
-    <title> Pizzaria da Laura </title>
+    <title>Pizzaria da Laura - Cardápio</title>
     <style>
         * {
             margin: 0;
             box-sizing: border-box;
+        }
+
+        body {
+
+            background-color: rgb(5, 133, 207);
+            color: gold;
+            font-family: Arial, sans-serif;
+
         }
 
         header {
@@ -24,6 +32,11 @@
             width: 100%;
             font-size: 24px;
         }
+
+        img {
+            margin: 0;
+        }
+
         ul,
         li {
             display: inline;
@@ -63,6 +76,7 @@
             margin: 2px;
 
         }
+
         #F2 {
 
             display: flex;
@@ -70,27 +84,32 @@
             color: white;
             padding: 10px;
         }
+
         .container {
-            display: flex; 
-            justify-content: auto; 
-            align-items: auto; 
-             
-        }
-        .box {
-            width: 209px; 
-            height: 100px; 
-            margin: 5px; 
             display: flex;
-            justify-content: center; 
-            align-items: center; 
-            background-color: rgba(0, 0, 0, 0.541); 
-            color: black; 
-            border-radius: 10px solid black;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
         }
-        img{
-            width: auto ; 
-            height: 100px; 
-            margin: 5px;   
+
+        .category {
+            background-color: rgba(0, 0, 0, 0.432);
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            width: 250px;
+        }
+
+        .pizza {
+            margin: 10px 0;
+        }
+
+        .pizza img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -103,35 +122,61 @@
         </div>
         <div id="menu">
             <ul>
+                <li><a href="index.html"> Início </a></li>
                 <li><a href="cardapio.html"> Cardápio </a></li>
-                <li><a href=""> Montar pizzas </a></li>
-                <li><a href=""> Sobre </a></li>
-                <li><a href=""> Promoções </a></li>
+                <li><a href="montarpizzas.html"> Montar pizzas </a></li>
+                <li><a href="sobre.html"> Sobre </a></li>
+                <li><a href="promoções.html"> Promoções </a></li>
             </ul>
         </div>
     </header>
-    <main>
-        <div class="container">
-            <div class="box"> <img src="parmesiana.jpg">  </div>
-            <div class="box">  </div>
-            <div class="box">  </div>
+    <div class="container">
+        <div class="category">
+            <h2>Tradicionais</h2>
+            <div class="pizza"><img src="marguerita.jpg" alt="Marguerita">
+                <p>Marguerita</p>
+            </div>
+            <div class="pizza"><img src="calabresa.jpg" alt="Calabresa">
+                <p>Calabresa</p>
+            </div>
+            <div class="pizza"><img src="parmesiana.jpg" alt="Parmesiana">
+                <p>Parmesiana</p>
+            </div>
         </div>
-        <div class="container">
-            <div class="box">  </div>
-            <div class="box">  </div>
-            <div class="box">  </div>
+        <div class="category">
+            <h2>Especiais</h2>
+            <div class="pizza"><img src="cinco queijos.jpg" .jpg" alt="Cinco Queijos">
+                <p>Cinco Queijos</p>
+            </div>
+            <div class="pizza"><img src="frango.jpg" .jpg" alt="Frango ">
+                <p>Frango </p>
+            </div>
+            <div class="pizza"><img src="mussarela.jpg" alt="Mussarela">
+                <p>Mussarela</p>
+            </div>
         </div>
-        <div class="container">
-            <div class="box">  </div>
-            <div class="box">  </div>
-            <div class="box">  </div>
+        <div class="category">
+            <h2>Premium</h2>
+            <div class="pizza"><img src="fritas com cheddar.jpg" alt=" Fritas com cheddar">
+                <p>Fritas com cheddar</p>
+            </div>
+            <div class="pizza"><img src="atum.jpg" alt="Atum">
+                <p>Atum</p>
+            </div>
+            <div class="pizza"><img src="carne seca.jpg" alt="Carne Seca">
+                <p>Carne Seca</p>
+            </div>
         </div>
-        <div class="container">
-            <div class="box">  </div>
-            <div class="box">  </div>
-            <div class="box">  </div>
+        <div class="category">
+            <h2> Ofertas </h2>
+            <div class="pizza"><img src="champignon.jpg" alt="champignon">
+                <p>Champignon</p>
+            </div>
+            <div class="pizza"><img src="bacon.jpg" alt="Bacon">
+                <p>Bacon</p>
+            </div>
         </div>
-    </main>
+    </div>
     <footer>
         <div id="F2">
             <div id="f4">

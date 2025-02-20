@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Pizzaria da Laura - Montar pizzas </title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            background-color: rgb(5, 133, 207, 0.6);
+        }
+
+        footer {
+            background-color: rgb(5, 133, 207, 0.6);
+            padding: 20px;
+            margin: 0;
+            width: 100%;
+            font-size: 24px;
+        }
+
+        ul,
+        li {
+            display: inline;
+            list-style: none;
+            padding-right: 15px;
+            padding-top: 10px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 24px;
+        }
+
+        a:hover {
+            color: white;
+            background-color: rgb(5, 133, 207);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-left: 30px;
+        }
+
+        #logo {
+            display: flex;
+            align-items: center;
+        }
+
+        #menu {
+            background-color: gold;
+            padding: 10px;
+            margin: 2px;
+        }
+
+        #F2 {
+            display: flex;
+            justify-content: center;
+            color: white;
+            padding: 10px;
+        }
+
+        .promo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .promo-box {
+            width: 250px;
+            background-color:rgba(255, 255, 255, 0.445);
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .promo-box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .promo-box h3 {
+            margin: 10px 0;
+            font-size: 22px;
+        }
+
+        .promo-box p {
+            font-size: 18px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(5, 133, 207); color: gold;">
+    <header>
+        <div id="logo">
+            <img src="logo.jpg.webp" width="70px">
+            <h1> Pizzaria da Laura - Promoções  </h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html"> Início </a></li>
+                <li><a href="cardapio.html"> Cardápio </a></li>
+                <li><a href="montarpizzas.html"> Montar pizzas </a></li>
+                <li><a href="sobre.html"> Sobre </a></li>
+                <li><a href="promocoes.html"> Promoções </a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="promo-container">
+        <div class="promo-box">
+            <img src="pizza1.jpg" alt="Pizza Família">
+            <h3>Combo Família</h3>
+            <p>2 Pizzas grandes + 1 refrigerante 2L por apenas R$ 79,90!</p>
+        </div>
+        <div class="promo-box">
+            <img src="pizza2.jpg" alt="Pizza Individual">
+            <h3>Pizza do Dia</h3>
+            <p>Pizza média de qualquer sabor por apenas R$ 39,90!</p>
+        </div>
+        <div class="promo-box">
+            <img src="pizza3.jpg" alt="Combo Amigos">
+            <h3>Combo Amigos</h3>
+            <p>3 pizzas médias + 2 refrigerantes 1,5L por R$ 99,90!</p>
+        </div>
+        <div class="promo-box">
+            <img src="pizza4.jpg" alt="Pizza Premium">
+            <h3>Pizza Premium</h3>
+            <p>Qualquer pizza especial + sobremesa por R$ 59,90!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div id="F2">
+            <div id="f4">
+                <p style="font-size: large;"> &copy; Desenvolvido por Laura Sodré - 2025 </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
